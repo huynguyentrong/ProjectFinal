@@ -23,6 +23,8 @@ const Header = () => {
           <Link href={"/"}>Trang chủ</Link>
           <Link href={"/product"}>Sản phẩm</Link>
           <Link href={"/about"}>About</Link>
+          <Link href={"/"}>tuyển dụng</Link>
+          <Link href={"/contact"}>liên hệ</Link>
         </div>
 
         <div className={"flex items-center gap-5"}>
