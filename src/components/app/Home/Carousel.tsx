@@ -1,20 +1,7 @@
-// import { Button } from "@/components/ui/button";
-// import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import BannerImage from "@/assets/images/Kiwi.jpg";
-// import juice from "@/assets/images/Oranges.jpg";
-// import Shopping from "@/assets/images/shopping.png";
-// import sale from "@/assets/images/sale.png";
-// import Image from "next/image";
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from "@/components/ui/carousel";
+
 import BannerAbout from "@/assets/images/nong_san_trung_quoc_gan_mac_Viet14_44_13_000000.jpg";
 const Banner = () => {
   return (
