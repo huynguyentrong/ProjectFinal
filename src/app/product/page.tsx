@@ -25,7 +25,7 @@ import {
 const Product = () => {
   return (
     <>
-      <div className="container py-4 flex items-center mt-40">
+      <div className="container mx-auto py-4 flex items-center mt-40">
         <a href="" className="text-primary text-base">
           <Home />
         </a>
@@ -34,7 +34,7 @@ const Product = () => {
         </span>
         <p className="text-gray-600 font-medium">Shop</p>
       </div>
-      <div className="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+      <div className="container mx-auto grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
         <div className="col-span-1 bg-white px-4 pb-6 shadow rounded overflow-hidden">
           <div className="divide-y divide-gray-200 space-y-5 ">
             <div>
@@ -150,7 +150,7 @@ const Product = () => {
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                   <a
-                    href="#"
+                    href="/product/id"
                     className="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition"
                   >
                     <Search />
