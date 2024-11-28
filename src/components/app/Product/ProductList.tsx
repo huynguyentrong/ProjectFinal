@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 const ProductList = () => {
   return (
-    <div className="mt-10">
-      <h2 className="text-green-600 font-bold text-2xl">
+    <div className="my-10">
+      <h2 className="text-green-600 font-bold text-2xl text-center mb-10">
         Our popular products
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">

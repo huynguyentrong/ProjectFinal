@@ -3,12 +3,19 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: roboto, sans-serif;
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
 }
 
@@ -76,29 +83,123 @@ body {
     @apply bg-background text-foreground;
   }
 }
-@media (hover: hover) {
-  .menu-link {
-    position: relative;
-    transition: all 0.2s linear;
+.card-data {
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+.card-article:hover .card-data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.card-article:hover {
+  animation: remove-overflow 2s forwards;
+}
+.card-article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+.card-article:not(:hover) .card-data {
+  animation: remove-data 1s forwards;
+}
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
   }
-  .menu-link:after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: auto;
-    right: 0;
-    width: 0;
-    height: 3px;
-    background-color: #f53838;
-    transition: all 0.2s linear;
-    transition: all 0.2s linear;
+  100% {
+    transform: translateY(-7rem);
   }
-  .menu-link:hover {
-    color: #f53838;
+}
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
   }
-  .menu-link:hover:after {
-    width: 100%;
-    left: 0;
-    right: auto;
+}
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 340px) {
+  .card-data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+.overlay-content {
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-container:hover .overlay-content {
+  transform: translateY(25%);
+}
+.card {
+  position: relative;
+  width: 300px; /* Điều chỉnh kích thước để phù hợp với màn hình */
+  height: 400px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #f4f4f4;
+  margin: 113px;
+  perspective: 100em; /* Đảm bảo góc nhìn 3D */
+  box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.2);
+}
+
+.cover {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left; /* Gốc xoay */
+  transition: transform 1s ease-in-out; /* Thêm hiệu ứng mượt */
+  border-radius: 0px 10px 10px 0px;
+}
+
+.card:hover .cover {
+  transform: rotateY(-180deg); /* Xoay hoàn toàn để hiển thị mặt trong */
+}
+
+.coverFront,
+.coverBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden; /* Ẩn mặt sau khi không hiển thị */
+}
+
+.coverFront {
+  background: #f4f4f4; /* Mặt ngoài màu trắng */
+  color: #333;
+}
+
+.coverBack {
+  background: #ddd; /* Mặt trong màu xám */
+  transform: rotateY(180deg); /* Đặt sẵn trạng thái xoay mặt trong */
+}
+
+@media (max-width: 768px) {
+  /* Đảm bảo responsive trên màn hình nhỏ */
+  .card {
+    width: 100%; /* Cho phép item chiếm toàn bộ chiều rộng */
+    max-width: 90%; /* Giới hạn kích thước tối đa */
   }
 }

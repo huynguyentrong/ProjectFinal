@@ -5,28 +5,14 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Banner Section */}
-      <section className="banner h-[700px] relative">
-        <div className="w-full h-full relative bg-[url('/assets/images/bn22-637311027205741214.jpg')] bg-cover">
-          <div className="absolute top-[15%] left-[15%] text-white z-10">
-            <div className="flex items-center gap-2 text-lg mb-2">
-              <Link href="/">Trang chủ</Link>
-              <span>/</span>
-              <span>Giới thiệu</span>
-            </div>
-            <h1 className="text-6xl font-bold">Giới thiệu</h1>
-          </div>
-        </div>
-      </section>
-
       {/* Content Section */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="flex gap-8">
+      <div className="container mx-auto px-4 py-8 lg:py-12">
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
           {/* Left Sidebar */}
-          <div className="w-[300px] flex-shrink-0">
+          <div className="w-full lg:w-[300px] lg:flex-shrink-0 hidden lg:block">
             <div className="bg-white rounded-lg overflow-hidden border">
               <div className="p-4 bg-[#0B7132] text-white">
-                <h2 className="text-xl font-bold">GIỚI THIỆU</h2>
+                <h2 className="text-lg lg:text-xl font-bold">GIỚI THIỆU</h2>
               </div>
               <div className="py-2">
                 <div className="hover:bg-gray-100 px-4 py-2">
@@ -61,21 +47,19 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-[#0B7132] mb-6">
+            <div className="mt-8 lg:mt-12">
+              <h2 className="text-xl lg:text-2xl font-bold text-[#0B7132] mb-4 lg:mb-6">
                 Lễ khánh thành Trung tâm công nghiệp chế biến hạt giống và nông
                 sản hiện đại bậc nhất
               </h2>
-              <div className="space-y-6 text-gray-700">
+              <div className="space-y-4 lg:space-y-6 text-gray-700">
                 <p>
                   Trung tâm được đầu tư trên diện tích 5ha, với dây chuyền chế
                   biến hiện đại của Nhật Bản. Công suất chế biến hạt giống 30
                   tấn/giờ, chế biến gạo đóng gói tự động 30 tấn/giờ, tổng vốn
                   đầu tư giai đoạn 1 là 350 tỷ đồng.
                 </p>
-
-                {/* Thêm hình ảnh sự kiện */}
-                <div className="mt-6">
+                <div className="mt-4 lg:mt-6">
                   <Image
                     src="/assets/images/khanhthanhdongthap-2-637309543953945690.jpg"
                     alt="Lễ khánh thành trung tâm"
@@ -89,11 +73,11 @@ const About = () => {
           </div>
 
           {/* Main Content */}
-          <div className="flex-1 min-h-screen">
-            <h2 className="text-2xl font-bold text-[#0B7132] mb-6">
+          <div className="flex-1 mt-8 lg:mt-0">
+            <h2 className="text-xl lg:text-2xl font-bold text-[#0B7132] mb-4 lg:mb-6">
               GIỚI THIỆU CHUNG
             </h2>
-            <div className="space-y-6 text-gray-700">
+            <div className="space-y-4 lg:space-y-6 text-gray-700">
               <p>
                 Công ty TNHH MTV Huy Nguyễn – Tập đoàn giống cây trồng hình
                 thành sớm nhất và đồng hành cùng sự phát triển của ngành nông
@@ -131,27 +115,24 @@ const About = () => {
               </p>
 
               {/* Industrial Center Section */}
-              <div className="mt-12">
-                <h2 className="text-2xl font-bold text-[#0B7132] mb-8 text-center lg:text-left">
+              <div className="mt-8 lg:mt-12">
+                <h2 className="text-xl lg:text-2xl font-bold text-[#0B7132] mb-6 lg:mb-8 text-center lg:text-left">
                   Lĩnh vực hoạt động chính:
                 </h2>
-                <div className="flex relative h-[430px] mb-24">
-                  <div className="flex-1 bg-white text-left relative">
-                    <div className="inline-block text-[#f2f2f2] text-8xl font-bold">
+
+                {/* First Activity Block */}
+                <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24">
+                  <div className="flex-1 bg-white text-left relative order-2 lg:order-1">
+                    <div className="hidden lg:inline-block text-[#f2f2f2] text-6xl lg:text-8xl font-bold">
                       01
                     </div>
-                    <div className="absolute top-[21%] -right-[3%] left-0 z-2">
-                      <div className="relative shadow-2xl text-left rounded-lg bg-white py-[10%] px-[11%]">
-                        {/* Đường gạch ngang màu nâu */}
-                        <div className="w-24 h-1 bg-[#8B4513] mb-4"></div>
-
-                        {/* Tiêu đề */}
-                        <h3 className="text-[#0B7132] font-bold text-xl mb-4">
+                    <div className="lg:absolute lg:top-[21%] lg:-right-[3%] lg:left-0 z-2">
+                      <div className="relative shadow-2xl text-left rounded-lg bg-white p-6 lg:py-[10%] lg:px-[11%]">
+                        <div className="w-16 lg:w-24 h-1 bg-[#8B4513] mb-4"></div>
+                        <h3 className="text-lg lg:text-xl text-[#0B7132] font-bold mb-4">
                           NGHIÊN CỨU, CHỌN TẠO, SẢN XUẤT KINH DOANH GIỐNG CÂY
                           TRỒNG
                         </h3>
-
-                        {/* Nội dung */}
                         <p className="text-gray-700 mb-4">
                           Vinarice tập trung nghiên cứu, phát triển các dòng sản
                           phẩm năng suất, chất lượng vượt trội, thích ứng với
@@ -161,7 +142,7 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="order-2 w-[40%] z-1">
+                  <div className="w-full lg:w-[40%] order-1 lg:order-2 mb-6 lg:mb-0">
                     <Image
                       src={BannerAbout}
                       alt="Banner About"
@@ -171,8 +152,10 @@ const About = () => {
                     />
                   </div>
                 </div>
-                <div className="flex relative h-[430px] mb-24">
-                  <div className="order-1 w-[40%] z-1">
+
+                {/* Second Activity Block */}
+                <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24">
+                  <div className="w-full lg:w-[40%] mb-6 lg:mb-0">
                     <Image
                       src={BannerAbout}
                       alt="Banner About"
@@ -181,22 +164,17 @@ const About = () => {
                       className="object-cover w-full h-full rounded-sm"
                     />
                   </div>
-                  <div className="flex-1 bg-white text-right relative order-2">
-                    <div className="inline-block text-[#f2f2f2] text-8xl font-bold">
+                  <div className="flex-1 bg-white text-right relative">
+                    <div className="hidden lg:inline-block text-[#f2f2f2] text-6xl lg:text-8xl font-bold">
                       02
                     </div>
-                    <div className="absolute top-[21%] right-0 -left-[3%] z-2">
-                      <div className="relative shadow-2xl text-left rounded-lg bg-white py-[10%] px-[11%]">
-                        {/* Đường gạch ngang màu nâu */}
-                        <div className="w-24 h-1 bg-[#8B4513] mb-4"></div>
-
-                        {/* Tiêu đề */}
-                        <h3 className="text-[#0B7132] font-bold text-xl mb-4">
+                    <div className="lg:absolute lg:top-[21%] lg:right-0 lg:-left-[3%] z-2">
+                      <div className="relative shadow-2xl text-left rounded-lg bg-white p-6 lg:py-[10%] lg:px-[11%]">
+                        <div className="w-16 lg:w-24 h-1 bg-[#8B4513] mb-4"></div>
+                        <h3 className="text-lg lg:text-xl text-[#0B7132] font-bold mb-4">
                           NGHIÊN CỨU, CHỌN TẠO, SẢN XUẤT KINH DOANH GIỐNG CÂY
                           TRỒNG
                         </h3>
-
-                        {/* Nội dung */}
                         <p className="text-gray-700 mb-4">
                           Vinarice tập trung nghiên cứu, phát triển các dòng sản
                           phẩm năng suất, chất lượng vượt trội, thích ứng với
