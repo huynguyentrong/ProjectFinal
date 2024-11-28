@@ -11,6 +11,13 @@ import Lemon from "@/assets/images/Lemon.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const bestProduct = [
   {
@@ -163,7 +170,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-4">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-4">
         {bestProduct.map((items, index) => (
           <div
             key={index}
@@ -208,7 +215,65 @@ const Product = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+      <Carousel
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full"
+      >
+        <CarouselContent>
+          {bestProduct.map((items, index) => (
+            <CarouselItem
+              key={index}
+              className="basis-full md:basis-1/3 lg:basis-1/4"
+            >
+              <div className="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div className="relative product-container">
+                  <div className="absolute top-2 left-2 z-20">
+                    <div className="bg-red-600 text-white px-3 py-1 rounded-r-lg font-bold transform -skew-x-12">
+                      NEW
+                    </div>
+                  </div>
+                  <Image
+                    src={items.image}
+                    alt="juice"
+                    className="w-96 h-64 object-contain"
+                  />
+                  <div className="absolute -bottom-20 top-0 left-0 right-0 overlay-content">
+                    <div className="bg-black bg-opacity-70 text-white p-4">
+                      <div className="space-y-1 mb-2">
+                        <div>
+                          <span className="font-medium">Tình trạng:</span>
+                          {items.status}
+                        </div>
+                        <div>
+                          <span className="font-medium">Xuất xứ:</span>{" "}
+                          {items.origin}
+                        </div>
+                      </div>
+                      <p className="text-sm">
+                        Thành phần kết hợp 3 loại gạo lứt giúp cơm thơm dẻo,
+                        bùi, hương thơm đặc biệt, giàu vitamin và khoáng chất,
+                        hỗ trợ giảm giảm cân và giảm nguy cơ bệnh tiểu đường,
+                        tốt cho tim...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h2 className="text-center text-green-700 font-medium text-lg">
+                    GẠO LỨT TAM SẮC 1KG
+                  </h2>
+                </div>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="hidden md:flex -left-12 text-green-800 hover:text-green-700 hover:bg-green-50" />
+        <CarouselNext className="hidden md:flex -right-12 text-green-800 hover:text-green-700 hover:bg-green-50" />
+      </Carousel>
     </div>
   );
 };

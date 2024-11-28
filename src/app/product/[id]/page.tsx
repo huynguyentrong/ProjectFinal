@@ -242,7 +242,8 @@ const ProductDetail = () => {
         <h2 className="text-center text-2xl md:text-3xl font-semibold text-green-700 mb-8">
           SẢN PHẨM TƯƠNG TỰ
         </h2>
-
+      </div>
+      <div className="container mx-auto">
         <Carousel
           opts={{
             align: "start",
@@ -250,28 +251,50 @@ const ProductDetail = () => {
           }}
           className="w-full"
         >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {bestProduct.map((product) => (
+          <CarouselContent>
+            {bestProduct.map((items, index) => (
               <CarouselItem
-                key={product.id}
-                className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
+                key={index}
+                className="basis-full md:basis-1/3 lg:basis-1/4"
               >
-                <div className="relative flex flex-col items-center">
-                  <div className="absolute -top-2 -left-2 z-10">
-                    <div className="bg-red-600 text-white px-4 py-1 rounded-sm">
-                      NEW
+                <div className="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                  <div className="relative product-container">
+                    <div className="absolute top-2 left-2 z-20">
+                      <div className="bg-red-600 text-white px-3 py-1 rounded-r-lg font-bold transform -skew-x-12">
+                        NEW
+                      </div>
+                    </div>
+                    <Image
+                      src={items.image}
+                      alt="juice"
+                      className="w-96 h-64 object-contain"
+                    />
+                    <div className="absolute -bottom-20 top-0 left-0 right-0 overlay-content">
+                      <div className="bg-black bg-opacity-70 text-white p-4">
+                        <div className="space-y-1 mb-2">
+                          <div>
+                            <span className="font-medium">Tình trạng:</span>
+                            {items.status}
+                          </div>
+                          <div>
+                            <span className="font-medium">Xuất xứ:</span>{" "}
+                            {items.origin}
+                          </div>
+                        </div>
+                        <p className="text-sm">
+                          Thành phần kết hợp 3 loại gạo lứt giúp cơm thơm dẻo,
+                          bùi, hương thơm đặc biệt, giàu vitamin và khoáng chất,
+                          hỗ trợ giảm giảm cân và giảm nguy cơ bệnh tiểu đường,
+                          tốt cho tim...
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="w-full aspect-square relative mb-4">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-contain"
-                    />
+                  <div className="p-4">
+                    <h2 className="text-center text-green-700 font-medium text-lg">
+                      GẠO LỨT TAM SẮC 1KG
+                    </h2>
                   </div>
-                  <h3 className="text-center font-medium text-sm md:text-base">
-                    {product.name}
-                  </h3>
                 </div>
               </CarouselItem>
             ))}

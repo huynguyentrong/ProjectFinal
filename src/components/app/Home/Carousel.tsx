@@ -6,7 +6,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
 const carouselItems = [
   {
     title: "We are the suppliers of quality products",
@@ -90,7 +89,7 @@ const Banner = () => {
                   {/* Right Section - Image */}
                   <div className="flex-1 relative">
                     <div className="relative rounded-[2rem] overflow-hidden">
-                      <Image
+                      <img
                         src={item.image}
                         alt="Agriculture"
                         className="w-full lg:h-[600px] h-full object-cover"

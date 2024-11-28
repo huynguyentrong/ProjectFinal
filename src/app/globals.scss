@@ -150,11 +150,10 @@ body {
 }
 .card {
   position: relative;
-  width: 300px; /* Điều chỉnh kích thước để phù hợp với màn hình */
+  width: 350px; /* Điều chỉnh kích thước để phù hợp với màn hình */
   height: 400px;
   border-radius: 0px 10px 10px 0px;
   background-color: #f4f4f4;
-  margin: 113px;
   perspective: 100em; /* Đảm bảo góc nhìn 3D */
   box-shadow: 30px 40px 40px rgba(0, 0, 0, 0.2);
 }
