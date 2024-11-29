@@ -52,7 +52,11 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 pb-8 sm:pb-16">
         {/* Product Images */}
         <div>
-          <ImageSlider images={product.images} />
+          {product.images ? (
+            <ImageSlider images={product.images} />
+          ) : (
+            <p>No images available</p>
+          )}
         </div>
 
         {/* Product Details */}
