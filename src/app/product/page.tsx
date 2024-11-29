@@ -25,36 +25,42 @@ const bestProduct = [
     status: "Còn hàng",
     origin: "Vietnam",
     image: orangeBanner,
+    name: "Cam vàng nhập khẩu úc",
   },
   {
     id: 2,
     status: "Còn ít hàng",
     origin: "Thailand",
     image: chili,
+    name: "Tương ớt chin su 500g",
   },
   {
     id: 3,
     status: "Không khả dụng",
     origin: "Chinese",
     image: ricest25,
+    name: "GẠO ST25 HUT CHÂN KHOẢNG 5KG",
   },
   {
     id: 4,
     status: "Đơn hàng online",
     origin: "Singapore",
     image: juice,
+    name: "Nước ép nguyên chất",
   },
   {
     id: 5,
     status: "Chỉ bán tại cửa hàng",
     origin: "Korea",
     image: Tomato,
+    name: "Cà chua 1kg",
   },
   {
     id: 6,
     status: "Còn hàng",
     origin: "USA",
     image: Lemon,
+    name: "Chanh vàng ",
   },
 ];
 const Product = () => {
@@ -114,7 +120,7 @@ const Product = () => {
                 Gạo Thơm, Gạo Sạch đóng gói theo quy cách túi 5kg, 10kg
               </span>
               <Button className="text-base font-medium hover:underline">
-                <Link href="/product/productDetail"> Xem chi tiết</Link>
+                <Link href="/product/productDetail2"> Xem chi tiết</Link>
               </Button>
             </div>
           </article>
@@ -134,7 +140,7 @@ const Product = () => {
               </span>
 
               <Button className="text-base font-medium hover:underline">
-                <Link href="/product/productDetail"> Xem chi tiết</Link>
+                <Link href="/product/productDetail3"> Xem chi tiết</Link>
               </Button>
             </div>
           </article>
@@ -169,53 +175,6 @@ const Product = () => {
           </h2>
         </div>
       </div>
-
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-4">
-        {bestProduct.map((items, index) => (
-          <div
-            key={index}
-            className="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden"
-          >
-            <div className="relative product-container">
-              <div className="absolute top-2 left-2 z-20">
-                <div className="bg-red-600 text-white px-3 py-1 rounded-r-lg font-bold transform -skew-x-12">
-                  NEW
-                </div>
-              </div>
-              <Image
-                src={items.image}
-                alt="juice"
-                className="w-96 h-64 object-contain"
-              />
-              <div className="absolute -bottom-20 top-0 left-0 right-0 overlay-content">
-                <div className="bg-black bg-opacity-70 text-white p-4">
-                  <div className="space-y-1 mb-2">
-                    <div>
-                      <span className="font-medium">Tình trạng:</span>
-                      {items.status}
-                    </div>
-                    <div>
-                      <span className="font-medium">Xuất xứ:</span>{" "}
-                      {items.origin}
-                    </div>
-                  </div>
-                  <p className="text-sm">
-                    Thành phần kết hợp 3 loại gạo lứt giúp cơm thơm dẻo, bùi,
-                    hương thơm đặc biệt, giàu vitamin và khoáng chất, hỗ trợ
-                    giảm giảm cân và giảm nguy cơ bệnh tiểu đường, tốt cho
-                    tim...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4">
-              <h2 className="text-center text-green-700 font-medium text-lg">
-                GẠO LỨT TAM SẮC 1KG
-              </h2>
-            </div>
-          </div>
-        ))}
-      </div> */}
       <Carousel
         opts={{
           align: "start",
@@ -264,7 +223,7 @@ const Product = () => {
                 </div>
                 <div className="p-4">
                   <h2 className="text-center text-green-700 font-medium text-lg">
-                    GẠO LỨT TAM SẮC 1KG
+                    {items.name}
                   </h2>
                 </div>
               </div>

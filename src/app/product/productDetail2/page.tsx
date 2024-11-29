@@ -1,64 +1,64 @@
-import React from "react";
-import Image from "next/image";
-import juss from "@/assets/images/juss.jpg";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import vfresh from "@/assets/images/nuoc-ep-dao-vfresh-1-lit-202203261038061691.jpg";
-import fancy from "@/assets/images/nuoc-ep-nho-trang-daiya-fancy-huong-dao-150ml-clone-202407101502431161.jpg";
-import twister from "@/assets/images/6-lon-nuoc-cam-ep-twister-tropicana-320ml-202312261650000261.jpg";
-import poroto from "@/assets/images/x-11_202411201350307198.jpg";
-import grapefruit from "@/assets/images/img1532.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import ST25 from "@/assets/images/gao-ST25-hut-chan-khong-5kg.jpg";
+import gaoDQ from "@/assets/images/sellingpoint.jpg";
+import gaoVH from "@/assets/images/gao-vinh-hien-dac-san-st24-tui-2kg-202202111335163238.jpg";
+import gaoOC from "@/assets/images/thiet-ke-chua-co-ten-2024-09-11t143052168_202409111431553581.jpg";
+import BotGao from "@/assets/images/bot-gao-tai-ky-goi-400g-202202121121158226.jpg";
+import mamGao from "@/assets/images/Mamgao.jpg";
 const bestProduct = [
   {
     id: 1,
     status: "Còn hàng",
     origin: "Vietnam",
-    image: juss,
-    name: "Nước ép lựu Juss",
-    desc: "Nước ép trái cây chất lượng của thương hiệu nước ép Juss từ Thổ Nhĩ Kỳ. Nước ép lựu Juss lựu đỏ 1 lít từ quả lựu tươi ngon chứa nhiều vitamin và dinh dưỡng giúp giải khát nhanh chóng, cung cấp năng lượng cho cơ thể khỏe mạnh, mang lại hiệu quả làm đẹp da rất tốt, đặc biệt tốt cho mẹ bầu và thai nhi",
+    image: ST25,
+    name: "Gạo thơm Vua Gạo",
+    desc: "Gạo thơm Vua Gạo ST25 Lúa Tôm túi 5kg là loại gạo thơm ngon, có độ dẻo và mềm đặc biệt, hạt gạo thon dài, không bị khô sau khi nấu. Sản phẩm gạo Vua Gạo được đánh giá cao về chất lượng sản phẩm, hương vị thơm ngon, hấp dẫn, túi 5kg thích hợp cho gia đình sử dụng.",
   },
   {
     id: 2,
     status: "Còn ít hàng",
     origin: "Thailand",
-    image: vfresh,
-    name: "Nước ép đào Vfresh ",
-    desc: "Sản phẩm nước ép trái cây chất lượng thơm ngon từ thương hiệu Vfresh được làm từ nguyên liệu tự nhiên tươi ngon và đào tươi nguyên chất giữ nguyên được hương vị tự nhiên, thơm ngon vốn có. Sản phẩm giúp giải khát nhanh chóng, cung cấp chất dinh dưỡng, tốt cho sức khỏe.",
+    image: gaoDQ,
+    name: "Gạo Vinh Hiển Đỗ Quyên ",
+    desc: "Gạo Đỗ Quyên là một trong những dòng sản phẩm gạo đóng túi an toàn thương hiệu Gạo Vinh Hiển. Gạo Vinh Hiển Đỗ Quyên túi 5kg được trồng tại các cánh đồng tập trung và chăm bón cẩn thận, cho hạt dài, màu trắng trong. Gạo cho cơm dẻo vừa, mềm ngon và hương thơm nhẹ tự nhiên. ",
   },
   {
     id: 3,
     status: "Không khả dụng",
     origin: "Chinese",
-    image: twister,
-    name: "Nước cam ép twister",
-    desc: "Được chiết xuất từ những tép cam tươi nguyên chất tươi ngon và bổ dưỡng. Nước cam ép Twister với nguồn nguyên liệu tự nhiên được lựa chọn cẩn thận kết hợp công nghệ sản xuất hiện đại, mang lại thức uống có hương vị thơm ngon, tốt cho sức khỏe. Cam kết chính hãng và an toàn",
+    image: gaoVH,
+    name: "Gạo thơm Neptune",
+    desc: "Gạo Neptune chất thơm ngon, chất lượng được các bà nội trợ tin dùng. Gạo thơm Neptune ST25 Extra túi 5kg mang hương vị thơm ngon, độ mềm và dẻo vừa phải mang đến bữa ăn của bạn thêm tròn vị đậm đà và hấp dẫn. Gạo không tẩm các hoá chất độc hại an toàn cho người sử dụng.",
   },
   {
     id: 4,
     status: "Đơn hàng online",
     origin: "Singapore",
-    image: poroto,
-    name: "Nước ép Chai ổi",
-    desc: "Nước ép chai Thủy tinh nguyên chất dung tích 310ml được dung hòa 1-2% đường phèn tùy loại dùng nguyên chất vẫn giữ nguyên thể tích và giá có 2-3 viên đá giữ lạnh. Nước ép được ép tưoi hoàn toàn khi khách đặt không ép trước.",
+    image: gaoOC,
+    name: "Gạo lứt hỗn hợp",
+    desc: "Gạo Ông Cụ là thương hiệu gạo chất lượng đạt chuẩn được nhiều bà nội trợ lựa chọn sử dụng. Gạo lứt hỗn hợp 10 loại hạt Ông Cụ hộp 1kg được sản xuất theo quy trình sản xuất gạo hiện đại an toàn. Gạo lứt chứa nhiều khoáng chất và vitamin rất cần thiết cho cơ thể. ",
   },
   {
     id: 5,
     status: "Chỉ bán tại cửa hàng",
     origin: "Korea",
-    image: grapefruit,
-    name: "Nước ép chai bưởi",
-    desc: "Nước ép chai Thủy tinh nguyên chất dung tích 310ml được dung hòa 1-2% đường phèn tùy loại dùng nguyên chất vẫn giữ nguyên thể tích và giá có 2-3 viên đá giữ lạnh. Nước ép được ép tưoi hoàn toàn khi khách đặt không ép trước.",
+    image: BotGao,
+    name: "Bột gạo Tài Ký",
+    desc: "Bột gạo hay còn được gọi là gạo rắm, bột gạo tẻ là một loại bột đa dụng không thể thiếu khi làm bánh. Bột qua các công đoạn như ngâm, xay, khuấy, lắng, chia bột, phơi khô. Bột gạo Tài Ký gói 400g nguyên liệu như bánh bò, bánh giò, bánh cuốn, bánh bèo, bánh đúc, bánh khoái, bánh canh, bánh căn, bánh hỏi, bánh đập…",
   },
   {
     id: 6,
     status: "Còn hàng",
     origin: "USA",
-    image: fancy,
-    name: "Trà thảo mộc Cap Panda Liang Teh lon ",
-    desc: "Nước ngọt, trà giải khát Cap Panda xuất xứ Indonesia, với các loại thảo mộc tự nhiên như lá cây sương sáo, la hán quả, kim ngân hoa, rễ cam thảo,... cùng quy trình sản xuất hiện đại cho ra hương vị trà giải khát thảo mộc Cap Panda Liang Teh 310ml giúp giải khát, cung cấp nước và vitamin cho cho thể sảng khoái.",
+    image: mamGao,
+    name: "Gạo thơm Mầm Gạo ST25",
+    desc: "Mầm Gạo là thương hiệu mới xuất hiện trên thị trường được nhiều người lựa chọn sử dụng cho bữa cơm gia đình. Gạo thơm Mầm Gạo ST25 Premium túi 5kg với gạo trắng đều, màu đồng nhất. Khi nấu toả hương tự nhiên cơm chín hạt mềm dẻo nhiều vị ngọt.",
   },
 ];
-const ProductDetail = () => {
+const ProductDetail2 = () => {
   return (
     <div className="grid grid-cols-1 gap-5 p-5 bg-[#eee] min-h-[100vh]">
       <div className="w-full text-sm text-gray-600">
@@ -70,11 +70,11 @@ const ProductDetail = () => {
           <span>
             <Link href="/product">Sản Phẩm</Link>
           </span>{" "}
-          &gt; <span>Nước ép</span>
+          &gt; <span> Gạo Thơm</span>
         </p>
       </div>
       <h1 className="w-full text-center text-2xl font-bold text-green-700 mt-5 uppercase">
-        sản phẩm nước ép
+        sản phẩm gạo thơm, gạo sạch
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full justify-items-center items-center">
         {bestProduct.map((item, index) => (
@@ -135,4 +135,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default ProductDetail2;
