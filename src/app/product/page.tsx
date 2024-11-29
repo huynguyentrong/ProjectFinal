@@ -1,15 +1,10 @@
 import { ChevronRight, Home } from "lucide-react";
 import React from "react";
-import juice from "@/assets/images/BannerJuice.png";
 import food from "@/assets/images/food.jpg";
 import rice from "@/assets/images/rice.jpg";
-import orangeBanner from "@/assets/images/Oranges.jpg";
-import chili from "@/assets/images/chillies.jpg";
-import ricest25 from "@/assets/images/gao-ST25-hut-chan-khong-5kg.jpg";
-import Tomato from "@/assets/images/Tomato.png";
-import Lemon from "@/assets/images/Lemon.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import juice from "@/assets/images/BannerJuice.png";
 import Link from "next/link";
 import {
   Carousel,
@@ -18,51 +13,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import bestProduct from "@/data/Product";
 
-const bestProduct = [
-  {
-    id: 1,
-    status: "Còn hàng",
-    origin: "Vietnam",
-    image: orangeBanner,
-    name: "Cam vàng nhập khẩu úc",
-  },
-  {
-    id: 2,
-    status: "Còn ít hàng",
-    origin: "Thailand",
-    image: chili,
-    name: "Tương ớt chin su 500g",
-  },
-  {
-    id: 3,
-    status: "Không khả dụng",
-    origin: "Chinese",
-    image: ricest25,
-    name: "GẠO ST25 HUT CHÂN KHOẢNG 5KG",
-  },
-  {
-    id: 4,
-    status: "Đơn hàng online",
-    origin: "Singapore",
-    image: juice,
-    name: "Nước ép nguyên chất",
-  },
-  {
-    id: 5,
-    status: "Chỉ bán tại cửa hàng",
-    origin: "Korea",
-    image: Tomato,
-    name: "Cà chua 1kg",
-  },
-  {
-    id: 6,
-    status: "Còn hàng",
-    origin: "USA",
-    image: Lemon,
-    name: "Chanh vàng ",
-  },
-];
 const Product = () => {
   return (
     <div className="container min-h-screen py-14 mx-auto">
