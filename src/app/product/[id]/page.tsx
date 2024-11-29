@@ -10,6 +10,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import bestProduct from "@/data/Product";
+import Link from "next/link";
+import ImageSlider from "@/components/app/Product/ProductCarousel";
 
 export async function generateStaticParams() {
   return bestProduct.map((product) => ({
@@ -28,11 +30,14 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
     <div className="container min-h-screen px-4 py-8 sm:py-14 mx-auto">
       {/* Breadcrumb */}
       <div className="flex items-center flex-wrap gap-2 py-4 mt-2">
-        <a href="" className="text-primary text-base">
+        <Link href={"/"} className="text-primary text-base">
           <Home className="w-5 h-5" />
-        </a>
+        </Link>
         <ChevronRight className="w-4 h-4 text-gray-400" />
-        <p className="text-gray-600 text-sm sm:text-base font-medium">Shop</p>
+        <p className="text-gray-600 text-sm sm:text-base font-medium">
+          {" "}
+          <Link href={"/product"}>Shop</Link>
+        </p>
         <ChevronRight className="w-4 h-4 text-gray-400" />
         <p className="text-gray-600 text-sm sm:text-base font-medium">
           Sản phẩm
@@ -46,28 +51,8 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
       {/* Product Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 pb-8 sm:pb-16">
         {/* Product Images */}
-        <div className="flex flex-col items-center space-y-4">
-          <div className="w-full flex justify-center">
-            <Image
-              src={product.image}
-              alt="product"
-              width={500}
-              height={500}
-              className="object-cover w-full max-w-[300px] sm:max-w-xs md:max-w-md"
-            />
-          </div>
-          <div className="grid grid-cols-3 gap-2 w-full max-w-[300px] sm:max-w-xs md:max-w-md">
-            {product.images?.map((image, index) => (
-              <Image
-                key={index}
-                src={image}
-                width={100}
-                height={100}
-                alt={`product-${index}`}
-                className="object-cover w-full cursor-pointer border-gray-400 border"
-              />
-            ))}
-          </div>
+        <div>
+          <ImageSlider images={product.images} />
         </div>
 
         {/* Product Details */}
@@ -98,7 +83,6 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
               },
               { label: "Brand", value: product.brand },
               { label: "Category", value: product.category },
-              { label: "SKU", value: product.sku },
             ].map((item, index) => (
               <p key={index} className="flex items-center space-x-2">
                 <span className="text-gray-800 font-semibold">
@@ -147,7 +131,8 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
           {/* Action Buttons */}
           <div className="flex gap-3 pt-2">
             <Button className="bg-red-500 border text-white py-2 px-4 rounded-md hover:bg-red-600 text-sm sm:text-base">
-              Liên hệ ngay <Send className="ml-2 w-4 h-4" />
+              <Link href="/contact">Liên hệ ngay</Link>{" "}
+              <Send className="ml-2 w-4 h-4" />
             </Button>
           </div>
 
@@ -211,7 +196,7 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
                     alt="juice"
                     className="w-96 h-64 object-contain"
                   />
-                  <div className="absolute -bottom-52 top-0 left-0 right-0 overlay-content">
+                  <div className="absolute -bottom-20 top-0 left-0 right-0 overlay-content">
                     <div className="bg-black bg-opacity-70 text-white p-4">
                       <div className="space-y-1 mb-2">
                         <div>

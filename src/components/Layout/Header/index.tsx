@@ -21,13 +21,15 @@ const Header = () => {
         {/* Navigation */}
         <nav className="flex justify-between items-center  relative">
           <div className="text-xl font-bold">
-            <Image
-              src={Logo}
-              alt="logo"
-              width={100}
-              height={100}
-              className="object-cover rounded-xl"
-            />
+            <Link href="/" className="hover:text-gray-600">
+              <Image
+                src={Logo}
+                alt="logo"
+                width={100}
+                height={100}
+                className="object-cover rounded-xl"
+              />
+            </Link>
           </div>
 
           {/* Desktop Menu - Hidden on mobile/tablet */}

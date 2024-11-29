@@ -1,9 +1,7 @@
-import orangeBanner from "@/assets/images/Oranges.jpg";
 import chili from "@/assets/images/chillies.jpg";
 import ricest25 from "@/assets/images/gao-ST25-hut-chan-khong-5kg.jpg";
 import Tomato from "@/assets/images/Tomato.png";
 import Lemon from "@/assets/images/Lemon.png";
-import juice from "@/assets/images/BannerJuice.png";
 import juss from "@/assets/images/juss.jpg";
 import vfresh from "@/assets/images/nuoc-ep-dao-vfresh-1-lit-202203261038061691.jpg";
 import twister from "@/assets/images/6-lon-nuoc-cam-ep-twister-tropicana-320ml-202312261650000261.jpg";
@@ -28,8 +26,8 @@ const bestProduct = [
     id: 1,
     status: "Còn hàng",
     origin: "Vietnam",
-    image: orangeBanner,
-    name: "Cam vàng nhập khẩu úc",
+    image: vfresh,
+    name: "Nước ép đào Vfresh",
   },
   {
     id: 2,
@@ -49,8 +47,8 @@ const bestProduct = [
     id: 4,
     status: "Đơn hàng online",
     origin: "Singapore",
-    image: juice,
-    name: "Nước ép nguyên chất",
+    image: water,
+    name: "Nước mắm chay <Maggi></Maggi>",
   },
   {
     id: 5,
@@ -71,8 +69,8 @@ const bestProduct = [
     id: 7,
     price: 45,
     oldPrice: 55,
-    rating: 4,
-    quantity: 4,
+    rating: 5,
+    quantity: 1,
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -80,14 +78,14 @@ const bestProduct = [
     ],
     reviews: 140,
     availability: "In Stock",
-    brand: "USA",
+    brand: "VN",
     category: "Juice",
-    sku: "BE455VGRT",
     description: [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
     images: [
+      juss,
       "/assets/images/nuoc-ep-luu-juss-1-lit-202102222143532609.jpg",
       "/assets/images/nuoc-ep-luu-juss-1-lit-202102222143535351.jpg",
       "/assets/images/nuoc-ep-luu-juss-1-lit-202102222143538512.jpg",
@@ -96,14 +94,14 @@ const bestProduct = [
     origin: "Vietnam",
     image: juss,
     name: "Nước ép lựu Juss",
-    desc: "Nước ép trái cây chất lượng của thương hiệu nước ép Juss từ Thổ Nhĩ Kỳ. Nước ép lựu Juss lựu đỏ 1 lít từ quả lựu tươi ngon chứa nhiều vitamin và dinh dưỡng giúp giải khát nhanh chóng, cung cấp năng lượng cho cơ thể khỏe mạnh, mang lại hiệu quả làm đẹp da rất tốt, đặc biệt tốt cho mẹ bầu và thai nhi",
+    desc: ".Nước ép trái cây chất lượng của thương hiệu nước ép Juss từ Thổ Nhĩ Kỳ. Nước ép lựu Juss lựu đỏ 1 lít từ quả lựu tươi ngon chứa nhiều vitamin và dinh dưỡng giúp giải khát nhanh chóng, cung cấp năng lượng cho cơ thể khỏe mạnh, mang lại hiệu quả làm đẹp da rất tốt, đặc biệt tốt cho mẹ bầu và thai nhi",
   },
   {
     id: 8,
-    price: 45,
+    price: 35,
     oldPrice: 55,
     rating: 4,
-    quantity: 4,
+    quantity: 2,
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -113,12 +111,13 @@ const bestProduct = [
     availability: "In Stock",
     brand: "USA",
     category: "Juice",
-    sku: "BE455VGRT",
+
     description: [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
     images: [
+      vfresh,
       "/assets/images/nuoc-dao-vfresh-hop-1-lit-09112018164634.jpg",
       "/assets/images/nuoc-dao-vfresh-hop-1-lit-09112018164639.jpg",
       "/assets/images/nuoc-dao-vfresh-hop-1-lit-09112018164644.jpg",
@@ -132,25 +131,25 @@ const bestProduct = [
   {
     id: 9,
 
-    price: 45,
+    price: 25,
     oldPrice: 55,
     rating: 4,
-    quantity: 4,
+    quantity: 0,
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
     reviews: 140,
-    availability: "In Stock",
+    availability: "not available",
     brand: "USA",
     category: "Juice",
-    sku: "BE455VGRT",
     description: [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
     images: [
+      twister,
       "/assets/images/6-lon-nuoc-cam-ep-twister-tropicana-320ml-202312261650011140.jpg",
       "/assets/images/6-lon-nuoc-cam-ep-twister-tropicana-320ml-202312261650017993.jpg",
       "/assets/images/6-lon-nuoc-cam-ep-twister-tropicana-320ml-202312261650028124.jpg",
@@ -163,25 +162,26 @@ const bestProduct = [
   },
   {
     id: 10,
-    price: 45,
+    price: 15,
     oldPrice: 55,
-    rating: 4,
-    quantity: 4,
+    rating: 5,
+    quantity: 10,
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
     reviews: 140,
-    availability: "In Stock",
-    brand: "USA",
+    availability: "Only Sold Online",
+    brand: "VN",
     category: "Juice",
     sku: "BE455VGRT",
     description: [
-      "Bảo quản: Để nơi khô ráo và thoáng mát",
-      "HSD: 1 năm kể từ ngày sản xuất.",
+      "Bảo quản: Để Tủ mát và nơi thoáng mát",
+      "HSD: 1-7 uống ngon hơn khi lạnh.",
     ],
     images: [
+      poroto,
       "/assets/images/nuoc-ep-chai-oi-coc.jpg",
       "/assets/images/oi-coc-ep.jpg",
       "/assets/images/nuoc-ep-oi-dua-1.jpg",
@@ -194,9 +194,9 @@ const bestProduct = [
   },
   {
     id: 11,
-    price: 45,
+    price: 15,
     oldPrice: 55,
-    rating: 4,
+    rating: 5,
     quantity: 4,
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
@@ -205,12 +205,12 @@ const bestProduct = [
     ],
     reviews: 140,
     availability: "In Stock",
-    brand: "USA",
+    brand: "VN",
     category: "Juice",
     sku: "BE455VGRT",
     description: [
-      "Bảo quản: Để nơi khô ráo và thoáng mát",
-      "HSD: 1 năm kể từ ngày sản xuất.",
+      "Bảo quản: Để Tủ mát và nơi thoáng mát",
+      "HSD: 1-7 uống ngon hơn khi lạnh.",
     ],
     images: [
       grapefruit,
@@ -225,10 +225,10 @@ const bestProduct = [
   },
   {
     id: 12,
-    price: 45,
+    price: 5,
     oldPrice: 55,
-    rating: 4,
-    quantity: 4,
+    rating: 3,
+    quantity: 1,
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -236,7 +236,7 @@ const bestProduct = [
     ],
     reviews: 140,
     availability: "In Stock",
-    brand: "USA",
+    brand: "Chinese",
     category: "Juice",
     sku: "BE455VGRT",
     description: [
