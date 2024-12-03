@@ -8,6 +8,7 @@ import {
   Users,
 } from "lucide-react";
 import React from "react";
+
 const features = [
   {
     icon: <Leaf className="w-6 h-6 text-green-600" />,

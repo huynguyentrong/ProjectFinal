@@ -470,7 +470,7 @@ const bestProduct = [
     status: "Còn hàng",
     origin: "Vietnam",
     image: dauan,
-    name: "Dầu đậu nành nguyên chất Simply",
+    name: "Dầu đậu nành  Simply",
     desc: "Dầu ăn Simply là loại dầu ăn sử dụng nguyên liệu chọn lọc, không chất bảo quản, tạo màu, rất an toàn cho sức khỏe. Dầu đậu nành Simply can 2 lít bổ sung Omega 3, 6, 9 có lợi cho sức khỏe và sự phát triển của não bộ, đẩy lùi nguy cơ mắc bệnh tim mạch.",
   },
   {
