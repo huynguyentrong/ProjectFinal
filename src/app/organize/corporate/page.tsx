@@ -12,7 +12,9 @@ const corpotate = () => {
         <span className="text-sm text-gray-400">
           <ChevronRight />
         </span>
-        <p className="text-gray-600 font-medium">Trang chủ</p>
+        <p className="text-gray-600 font-medium">
+          <Link href={"/organize"}>Trang Chủ</Link>
+        </p>
         <span className="text-sm text-gray-400">
           <ChevronRight />
         </span>

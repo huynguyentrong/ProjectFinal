@@ -143,18 +143,25 @@ const Header = () => {
                 Product
               </Link>
               <Link
-                href="#"
+                href="/organize"
                 className="py-2 px-4 hover:bg-gray-100 rounded"
                 onClick={toggleMobileMenu}
               >
-                Shop
+                Cơ cấu tổ chức
               </Link>
               <Link
                 href="#"
                 className="py-2 px-4 hover:bg-gray-100 rounded"
                 onClick={toggleMobileMenu}
               >
-                Contact
+                Lịch sử hình thành
+              </Link>
+              <Link
+                href="#"
+                className="py-2 px-4 hover:bg-gray-100 rounded"
+                onClick={toggleMobileMenu}
+              >
+                Tuyển dụng
               </Link>
               <button
                 className="mt-4 px-6 py-2 rounded-full border border-black hover:bg-black hover:text-white transition-colors"

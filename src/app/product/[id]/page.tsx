@@ -12,6 +12,7 @@ import {
 import bestProduct from "@/data/Product";
 import Link from "next/link";
 import ImageSlider from "@/components/app/Product/ProductCarousel";
+import contentMap from "@/components/app/Product/ContentDetail";
 
 export async function generateStaticParams() {
   return bestProduct.map((product) => ({
@@ -162,9 +163,15 @@ const ProductDetail = async ({ params }: { params: { id: string } }) => {
         </h3>
         <div className="w-full md:w-3/5 pt-4 sm:pt-6">
           <div className="text-gray-600 space-y-3 text-sm sm:text-base">
-            <p>{product.desc}</p>
+            <p>{product.content}</p>
           </div>
         </div>
+
+        {product.contentId ? (
+          React.createElement(contentMap[Number(product.contentId.id)]) // Chuyển đổi sang số
+        ) : (
+          <div>Nội dung không có sẵn cho ID {product.id}</div>
+        )}
       </div>
 
       {/* Similar Products */}

@@ -48,7 +48,7 @@ const bestProduct = [
     status: "Đơn hàng online",
     origin: "Singapore",
     image: water,
-    name: "Nước mắm chay <Maggi></Maggi>",
+    name: "Nước mắm chay Magie",
   },
   {
     id: 5,
@@ -84,6 +84,10 @@ const bestProduct = [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
+    label: "Juss",
+    content:
+      "Đối với mùa hè, không gì ngon hơn là thưởng thức những ly nước ép trái cây mát lạnh. Để tạo thêm không khí hứng khởi cho mùa hè này, hãy không quên thêm nước ép trái cây nhiệt đới Juss vào danh sách nước giải khát của bạn nhé. Trong những ngày nắng nóng của mùa hè, cơ thể thường cảm thấy khát nước. Đừng bỏ lỡ cơ hội thưởng thức nước trái cây mát lạnh với thương hiệu nước ép trái cây nhiệt đới Juss - lựa chọn hoàn hảo để giải nhiệt! ",
+    contentId: { id: 7 },
     images: [
       juss,
       "/assets/images/nuoc-ep-luu-juss-1-lit-202102222143532609.jpg",
@@ -111,7 +115,9 @@ const bestProduct = [
     availability: "In Stock",
     brand: "USA",
     category: "Juice",
-
+    content:
+      "Vfresh hiện đang là nhãn hiệu nước trái cây đóng hộp dẫn đầu tại thị trường trong nước. Tất cả các sản phẩm dòng Vfresh 100% như nước cam ép, nước táo, nước nho, nước rau quả đều là nước ép 100% nguyên chất, không chất bảo quản, không biến đổi gen, không bổ sung đường. Nước trái cây 100% Vfresh đều được ép từ nguồn trái cây tươi ngon trên thế giới như cam Valencia, nho Tây Ban Nha. Với chất lượng cao như vậy, Vfresh cũng được phục vụ trên hãng hàng không 4 sao –  Vietnam Airlines hạng thương gia nội địa và tất cả các hạng vé đối với đường bay quốc tế.",
+    contentId: { id: 8 },
     description: [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
@@ -140,6 +146,9 @@ const bestProduct = [
       { platform: "Twitter", icon: <Twitter />, href: "#" },
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
+    content:
+      "Nước Cam Ép Twister có màu sắc hấp dẫn, hương vị thơm ngon, nước ép cam Twister còn chứa rất nhiều chất bổ dưỡng thiết yếu cho cơ thể.Trong quả cam có nhiều vitamin A, C, B, khoảng 14% axit tartaric và một số nhỏ axit malic... giúp kích thích vị giác, cải thiện tình trạng kém ăn, mệt mỏi.",
+    contentId: { id: 9 },
     reviews: 140,
     availability: "not available",
     brand: "USA",
@@ -172,6 +181,9 @@ const bestProduct = [
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
     reviews: 140,
+    contentId: { id: 10 },
+    content:
+      "Chúng ta đều biết rằng, ổi là một trong những loại trái cây chứa rất nhiều vitamin C và nhiều dưỡng chất khác tốt cho sức khỏe. Vì thế món thức uống nước ép ổi rất phổ biến trong các thực đơn ăn kiêng.Ngoài ra, trong nước ép ổi còn dồi dào lượng vitamin khác như: Vitamin A, vitamin C và một số khoáng chất thiết yếu khác như: Canxi, magie , phốt-pho, sắt",
     availability: "Only Sold Online",
     brand: "VN",
     category: "Juice",
@@ -206,6 +218,9 @@ const bestProduct = [
     reviews: 140,
     availability: "In Stock",
     brand: "VN",
+    content:
+      "Theo chia sẻ của các chuyên gia dinh dưỡng thì nước ép chứa nhiều vitamin C cần thiết, mỗi ngày chúng ta cần cung cấp khoảng 600% vitamin C. Nước ép bưởi là sản phẩm từ những tép bưởi tươi ngọt, mang đến cho cơ thể nguồn vitamin C và vitamin A dồi dào, giúp duy trì sức đề kháng và năng lượng cho cơ thể!",
+    contentId: { id: 11 },
     category: "Juice",
     sku: "BE455VGRT",
     description: [
@@ -229,6 +244,9 @@ const bestProduct = [
     oldPrice: 55,
     rating: 3,
     quantity: 1,
+    content:
+      "Trà thảo mộc là thức uống thơm ngon của thương hiệu Cap Panda đến từ Indonesia. Nước uống với lon 310ml nhưng ngon ngọt thanh mát giúp giải khát nhanh chóng. Đây là loại nước cung cấp năng lượng cho cơ thể khỏe mạnh và sảng khoái. Bạn sẽ thật sảng khoái và khỏe mạnh khi có Cap Panda bên cạnh trên mọi hành trình",
+    contentId: { id: 12 },
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -267,6 +285,9 @@ const bestProduct = [
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
     reviews: 140,
+    content:
+      "Gạo ST25 lúa tôm là loại gạo được người dân canh tác trên vùng đất nuôi tôm. Theo các chuyên gia nông nghiệp, mô hình gạo thơm - tôm sạch này không chỉ thích ứng với biến đổi khí hậu mà còn có cơ hội xây dựng thương hiệu nông sản đặc trưng cho vùng đồng bắng sông Cửu Long, nâng cao giá trị hạt lúa, con tôm và đời sống dân vùng ngập mặn. Với cách trồng luân canh, xen canh như vậy thì loại gạo này có những điểm gì khác biệt và nổi trội hơn những loại gạo bình thường hay không? Hãy cùng tìm hiểu thêm thông qua bài viết này nhé",
+    contentId: { id: 13 },
     availability: "In Stock",
     brand: "USA",
     category: "Juice",
@@ -292,6 +313,9 @@ const bestProduct = [
     oldPrice: 55,
     rating: 4,
     quantity: 4,
+    content:
+      "Gạo thông dụng Vinh Hiển là loại gạo nở, xốp, mềm cơm. Thích hợp cho các quán ăn bình dân, các công tác từ thiện gạo. Sản phẩm được trồng và sản xuất theo tiêu chuẩn chất lượng bảo đảm an toàn vệ sinh thực phẩm cho gia đình bạn.Gạo nấu lên có độ xốp, nở tốt nhưng vẫn mềm cơm. Có chứa các vitamin và khoáng chất tự nhiên trong gạo, đảm bảo cung cấp đầy đủ năng lượng cho bạn hoạt động cả ngày dài.",
+    contentId: { id: 14 },
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -337,6 +361,9 @@ const bestProduct = [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
+    content:
+      "Gạo thơm dẻo đặc biệt ST25 Neptune túi 5kg (1 TÚI) là một loại gạo cao cấp, mang đến hương vị thơm ngon và đặc trưng của gạo ST25. Với hạt gạo dẻo, và đầy dinh dưỡng, ST25 Neptune là sự kết hợp hoàn hảo của hương vị và chất lượng. Gạo ST25 được trồng và chăm sóc một cách cẩn thận để đảm bảo chất lượng tốt nhất. Túi 5kg đủ để bạn sử dụng trong thời gian dài và đảm bảo sự tươi ngon và thơm lâu dài. Gạo thơm dẻo đặc biệt ST25 Neptune là sự lựa chọn tuyệt vời để thưởng thức món cơm ngon và đậm đà cùng gia đình và người thân.",
+    contentId: { id: 15 },
     images: [
       gaoVH,
       "/assets/images/gao-thom-neptune-st25-extra-tui-5kg-202403300918339138.jpg",
@@ -361,6 +388,9 @@ const bestProduct = [
     ],
     reviews: 140,
     availability: "In Stock",
+    content:
+      "Gạo lứt hỗn hợp 10 loại hạt  là sản phẩm đặc biệt của Vua Gạo khi kết hợp giữa gạo lứt dinh dưỡng và các loại gạo và hạt tốt cho sức khỏe như: Gạo Lứt huyết rồng, Gạo lứt tím than, gạo ST25,nếp tím than,đậu xanh….",
+    contentId: { id: 16 },
     brand: "USA",
     category: "Juice",
     sku: "BE455VGRT",
@@ -392,20 +422,23 @@ const bestProduct = [
     ],
     reviews: 140,
     availability: "In Stock",
-    brand: "USA",
+    brand: "VN",
     category: "Juice",
     sku: "BE455VGRT",
     description: [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
+    content:
+      "Bột Gạo Tài Ký  là một loại bột được ứng dụng rộng rãi trong nhiều công thức bánh, đặc biệt là các món bánh Việt. Sản phẩm góp phần mang đến vị ngon tuyệt hảo cho món bánh thành phẩm nên được nhiều người yêu thích sử dụng.",
+    contentId: { id: 17 },
     images: [
       BotGao,
       "/assets/images/bot-gao-taky-400gam-4-700x467.jpg",
       "/assets/images/bot-gao-taky-400gam-3-700x467.jpg",
     ],
     status: "Chỉ bán tại cửa hàng",
-    origin: "Korea",
+    origin: "VN",
     image: BotGao,
     name: "Bột gạo Tài Ký",
     desc: "Bột gạo hay còn được gọi là gạo rắm, bột gạo tẻ là một loại bột đa dụng không thể thiếu khi làm bánh. Bột qua các công đoạn như ngâm, xay, khuấy, lắng, chia bột, phơi khô. Bột gạo Tài Ký gói 400g nguyên liệu như bánh bò, bánh giò, bánh cuốn, bánh bèo, bánh đúc, bánh khoái, bánh canh, bánh căn, bánh hỏi, bánh đập…",
@@ -425,6 +458,9 @@ const bestProduct = [
     availability: "In Stock",
     brand: "USA",
     category: "Juice",
+    content:
+      "Gạo Nàng Hoa từ lâu đã được biết đến với các đặc tính thơm, mềm, ngọt vị. Là một trong giống gạo đặc sản của người miền Tây Nam Bộ. Với những ưu điểm vượt trội cùng nét đặc trưng riêng, hạt gạo thơm này được nhiều các cơ sở kinh doanh, đại lý gạo ưa chuộng",
+    contentId: { id: 18 },
     sku: "BE455VGRT",
     description: [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
@@ -438,8 +474,8 @@ const bestProduct = [
     status: "Còn hàng",
     origin: "USA",
     image: mamGao,
-    name: "Gạo thơm Mầm Gạo ST25",
-    desc: "Mầm Gạo là thương hiệu mới xuất hiện trên thị trường được nhiều người lựa chọn sử dụng cho bữa cơm gia đình. Gạo thơm Mầm Gạo ST25 Premium túi 5kg với gạo trắng đều, màu đồng nhất. Khi nấu toả hương tự nhiên cơm chín hạt mềm dẻo nhiều vị ngọt. ",
+    name: "Gạo Nàng Hoa",
+    desc: "Gạo Nàng Hoa là thương hiệu mới xuất hiện trên thị trường được nhiều người lựa chọn sử dụng cho bữa cơm gia đình. Gạo Nàng Hoa Premium túi 5kg với gạo trắng đều, màu đồng nhất. Khi nấu toả hương tự nhiên cơm chín hạt mềm dẻo nhiều vị ngọt. ",
   },
   // Dữ liệu sản phẩm dầu và gia vị
   {
@@ -448,6 +484,9 @@ const bestProduct = [
     oldPrice: 55,
     rating: 4,
     quantity: 4,
+    content:
+      "Dầu Đậu Nành Simply Nguyên Chất 100% chứa tới 80% axit béo chưa bão hoà cùng lượng lớn chất chống oxy hoá giúp làm giảm lượng cholesterol xấu trong máu và cho bạn một trái tim khoẻ mạnh. Dầu ăn Simly là sản phẩm được Hội Tim Mạch Học Việt Nam khuyên dùng.Dầu ăn giàu omega 3, 6, 9 rất tốt cho sức khỏe, là nguyên liệu không thể thiếu trong ngăn bếp mỗi gia đình để mang đến cho cả nhà những món ăn ngon và hấp dẫn.Sản phẩm được sản xuất từ nguyên liệu chọn lọc, không chứa chất bảo quản, chất tạo màu hay cholesterol, hoàn toàn thân thiện cho sức khoẻ.Dầu đậu nành Simply có màu vàng nhạt cùng hương nhẹ dịu rất thích hợp làm các món chiên, xào, trộn salad hay làm các loại nước sốt. ",
+    contentId: { id: 19 },
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -479,6 +518,10 @@ const bestProduct = [
     oldPrice: 55,
     rating: 4,
     quantity: 4,
+
+    content:
+      "Nước Mắm Chay Cốt Táo Maggi Chi 450Ml ngon đậm đà. Với thành phần cốt táo cô đặc cùng chiết xuất đậu nành lên men tự nhiên, Nước mắm táo không những mang lại vị ngon đậm đà mà còn giữ trọn hương vị đặc trưng của nước mắm.Công thức giảm muối giúp cho các món chấm - nấu vừa ngon vừa tốt cho sức khỏe, mang lại cho bữa ăn thêm tròn vị và hấp dẫn.Sản phẩmđược sản xuất theo công nghệ hiện đại. Mọi khâu từ tuyển chọn nguyên liệu tới chế biến, đóng gói đều diễn ra khép kín dưới sự giám sát và kiểm tra nghiêm ngặt, đảm bảo an toàn cho sức khỏe người tiêu dùng.",
+    contentId: { id: 20 },
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
@@ -524,6 +567,9 @@ const bestProduct = [
       "Bảo quản: Để nơi khô ráo và thoáng mát",
       "HSD: 1 năm kể từ ngày sản xuất.",
     ],
+    content:
+      "Từ những trái ớt đỏ chín mọng trên cay qua các công đoạn sản xuất trên dây chuyền hiện đại cho ra đời sản phẩm tương ớt Chinsu. Với hương thơm nồng của tỏi cùng sự biến tấu tinh tế giữa các loại gia vị khác nhau mang đến cho bạn những dòng tương ớt sóng sánh, thơm ngon, tròn vị trong từng chai.",
+    contentId: { id: 21 },
     images: [
       chili,
       "/assets/images/tuong-ot-chinsu-chai-500g-201911011615540234.jpg",
@@ -546,6 +592,9 @@ const bestProduct = [
       { platform: "Twitter", icon: <Twitter />, href: "#" },
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
+    content:
+      "Sa Tế Chinsu Tôm Ớt Sả Hũ 90G là sự pha trộn độc đáo giữa độ cay nồng của ớt và hương sả tinh tế, mang đến cho bữa ăn trải nghiệm đặc sắc. Thành phần của sản phẩm được chọn lựa kỹ lưỡng, ớt cay được nghiền nhuyễn, tạo nên hỗn hợp độc đáo, đậm đà và ngon miệng. Sa tế tôm ớt sả Chinsu không chỉ là gia vị tuyệt vời cho các món hải sản, mà còn là lựa chọn hoàn hảo để tăng cường hương vị cho các món nước và xào, giúp bữa ăn trở nên phong phú và hấp dẫn.",
+    contentId: { id: 22 },
     reviews: 140,
     availability: "In Stock",
     brand: "USA",
@@ -577,6 +626,9 @@ const bestProduct = [
       { platform: "Twitter", icon: <Twitter />, href: "#" },
       { platform: "Instagram", icon: <Instagram />, href: "#" },
     ],
+    content:
+      "Sốt Teriyaki O'food Chai 250g với kết cấu đặc sệt và vị mặn ngọt đặc trưng, teriyaki được dùng như là một loại sốt đa năng vừa có thể chấm, phết vừa dùng để nâng tầm hương vị khi chế biến các món xào, bít tết và hải sản. Sốt đã được pha sẵn dựa trên công thức phối trộn với tỉ lệ hoàn hảo giữa các thành phần nguyên liệu như nước tương, đường, thơm, gừng, tỏi, dầu cọ, dầu mè...tạo nên loại xốt teriyaki đạt chuẩn hương vị với màu nâu sậm đặc trưng.Thích hợp để làm các món như gà sốt teriyaki, cá hồi sốt teriyaki, các món áp chảo...Ngoài ra có thể dùng như dầu hào để xào rau củ các loại hay dùng làm sốt chấm cho các món thịt, hải sản đều được.",
+    contentId: { id: 23 },
     reviews: 140,
     availability: "In Stock",
     brand: "USA",
@@ -603,6 +655,9 @@ const bestProduct = [
     oldPrice: 55,
     rating: 4,
     quantity: 4,
+    content:
+      "Knorr là thương hiệu gia vị thuộc tập đoàn Unilever. Trải qua nhiều năm hình thành và phát triển, Knorr mang đến cho người tiêu dùng trên toàn thế giới đa dạng các sản phẩm gia vị chế biến, hạt nêm, nước dùng, nước chấm,... Hạt nêm Knorr thịt thăn xương ống và tủy 5kg là tinh hoa của nước hầm thịt, xương ống và tủy trong nhiều giờ. Được sản xuất trên dây chuyền cao cấp đạt chuẩn Châu Âu cùng với đó là quy trình đóng gói khép kín giúp đảm bảo an toàn vệ sinh thực phẩm. Hạt nêm Knorr giúp cho việc nấu ăn trở nên nhanh chóng và dễ dàng hơn nhưng vẫn đảm bảo được dinh dưỡng trong từng bữa ăn.",
+    contentId: { id: 24 },
     socialLinks: [
       { platform: "Facebook", icon: <Facebook />, href: "#" },
       { platform: "Twitter", icon: <Twitter />, href: "#" },
