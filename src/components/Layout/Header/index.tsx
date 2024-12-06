@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "@/assets/images/Logo.png";
 import Link from "next/link";
 import {
@@ -12,12 +12,25 @@ import {
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
     <>
-      <div className=" bg-[#fff8f0] p-3 md:p-8 overflow-x-hidden">
+      <div
+        className={` bg-[#fff8f0] p-3 md:p-5 overflow-x-hidden ${
+          isSticky ? "sticky top-0 bg-white  shadow-md z-50" : ""
+        }`}
+      >
         {/* Navigation */}
         <nav className="flex justify-between items-center  relative">
           <div className="text-xl font-bold">

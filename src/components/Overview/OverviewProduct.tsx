@@ -7,6 +7,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const features = [
@@ -58,7 +59,7 @@ const OverviewProduct = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <div className="relative bg-[#fff8f0]">
+      <div className="relative bg-[#fff8f0] item_scroll">
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
@@ -78,10 +79,12 @@ const OverviewProduct = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-lg text-base font-medium text-white bg-green-600 hover:bg-green-700 transition-colors">
-                  Liên hệ Ngay
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </button>
+                <Link href={"/contact"}>
+                  <button className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-lg text-base font-medium text-white bg-green-600 hover:bg-green-700 transition-colors">
+                    Liên hệ ngay
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </button>
+                </Link>
                 <button className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded-lg text-base font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">
                   Tìm Hiểu Thêm
                 </button>
@@ -118,7 +121,7 @@ const OverviewProduct = () => {
       </div>
 
       {/* Features Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 item_scroll">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Cam Kết Chất Lượng
@@ -129,7 +132,7 @@ const OverviewProduct = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -148,7 +151,7 @@ const OverviewProduct = () => {
       </div>
 
       {/* Stats Section */}
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 item_scroll">
         <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (

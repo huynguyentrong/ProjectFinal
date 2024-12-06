@@ -4,7 +4,7 @@ import BannerAbout from "@/assets/images/nong_san_trung_quoc_gan_mac_Viet14_44_1
 import Link from "next/link";
 const About = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white ">
       {/* Content Section */}
       <div className="container mx-auto px-4 py-8 lg:py-12">
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
@@ -77,7 +77,7 @@ const About = () => {
             <h2 className="text-xl lg:text-2xl font-bold text-[#0B7132] mb-4 lg:mb-6">
               GIỚI THIỆU CHUNG
             </h2>
-            <div className="space-y-4 lg:space-y-6 text-gray-700">
+            <div className="space-y-4 lg:space-y-6 text-gray-700 ">
               <p>
                 Công ty TNHH MTV Huy Nguyễn – Tập đoàn giống cây trồng hình
                 thành sớm nhất và đồng hành cùng sự phát triển của ngành nông
@@ -121,7 +121,7 @@ const About = () => {
                 </h2>
 
                 {/* First Activity Block */}
-                <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24">
+                <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24 item_scroll">
                   <div className="flex-1 bg-white text-left relative order-2 lg:order-1">
                     <div className="hidden lg:inline-block text-[#f2f2f2] text-6xl lg:text-8xl font-bold">
                       01
@@ -154,7 +154,7 @@ const About = () => {
                 </div>
 
                 {/* Second Activity Block */}
-                <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24">
+                <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24 item_scroll">
                   <div className="w-full lg:w-[40%] mb-6 lg:mb-0">
                     <Image
                       src={BannerAbout}
@@ -164,7 +164,7 @@ const About = () => {
                       className="object-cover w-full h-full rounded-sm"
                     />
                   </div>
-                  <div className="flex-1 bg-white text-right relative">
+                  <div className="flex-1 bg-white text-right relative ">
                     <div className="hidden lg:inline-block text-[#f2f2f2] text-6xl lg:text-8xl font-bold">
                       02
                     </div>

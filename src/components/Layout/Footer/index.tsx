@@ -1,130 +1,116 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  Send,
+  Twitter,
+  Youtube,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import logo from "@/assets/images/Logo.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#001524] text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-12">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold ml-2">tad garden</span>
-          </div>
-          <div className="flex gap-4">
-            <a href="#" className="text-white hover:text-gray-300">
-              <i className="fab fa-facebook text-2xl"></i>
-            </a>
-            <a href="#" className="text-white hover:text-gray-300">
-              <i className="fab fa-youtube text-2xl"></i>
-            </a>
-            <a href="#" className="text-white hover:text-gray-300">
-              <i className="fab fa-twitter text-2xl"></i>
-            </a>
-            <a href="#" className="text-white hover:text-gray-300">
-              <i className="fab fa-instagram text-2xl"></i>
-            </a>
+    <footer className="w-full absolute bg-[#fff8f0]  pt-24 pb-7 border rounded-tl-[125px] text-base mt-20 ">
+      <div className="w-[85%] mx-auto flex flex-wrap items-start justify-between">
+        <div className="basis-1/4 p-2 mb-4">
+          <h3 className="w-fit mb-4 relative">
+            Giới thiệu{" "}
+            <div className="w-full h-1 bg-white rounded-lg absolute top-6 left-0 overflow-hidden">
+              <span
+                className="w-4 h-full bg-red-500 rounded-lg absolute top-0 left-3 animate-[moving_2s_linear_infinite]"
+                style={{
+                  animation: "moving 2s linear infinite",
+                }}
+              ></span>
+            </div>{" "}
+          </h3>
+          <p className="py-2 ">312 Trần hưng đạo </p>
+          <p className="py-2 ">Điện thoại: (000) 000-0000</p>
+          <p className="py-2 ">Email: info@gmail.com</p>
+        </div>
+        <div className="basis-1/4 p-2 mb-4">
+          <h3 className="w-fit mb-4 relative">
+            Sản phẩm{" "}
+            <div className="w-full h-1 bg-white rounded-lg absolute top-6 left-0 overflow-hidden">
+              <span
+                className="w-4 h-full bg-red-500 rounded-lg absolute top-0 left-3 animate-[moving_2s_linear_infinite]"
+                style={{
+                  animation: "moving 2s linear infinite",
+                }}
+              ></span>
+            </div>{" "}
+          </h3>
+          <p className="py-2 uppercase">Nước ép nguyên chất</p>
+          <p className="py-2 uppercase">Gạo sạch,Gạo thơm</p>
+          <p className="py-2 uppercase">Thực phẩm Đa Dạng</p>
+        </div>
+        <div className="basis-1/4 p-2">
+          <h3 className="w-fit mb-4 relative">
+            Công ty{" "}
+            <div className="w-full h-1 bg-white rounded-lg absolute top-6 left-0 overflow-hidden">
+              <span
+                className="w-4 h-full bg-red-500 rounded-lg absolute top-0 left-3 animate-[moving_2s_linear_infinite]"
+                style={{
+                  animation: "moving 2s linear infinite",
+                }}
+              ></span>
+            </div>{" "}
+          </h3>
+          <ul>
+            <li className="mb-3">
+              <Link href={"/"} className="">
+                Tuyển dụng
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link href={"/organize"} className="">
+                Cơ cấu tổ chức
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link href={"/"} className="">
+                Lịch sử hình thành
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link href={"/contact"} className="">
+                Liên hệ
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="basic-1/4 p-2">
+          <h3 className="w-fit mb-10 relative">Office</h3>
+          <form className="flex items-center pb-4 justify-between border-b-2 solid mb-12">
+            <Mail className="text-base mr-3" />
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              required
+              className="w-full bg-transparent text-[#ccc] border-0 outline-none"
+            />
+            <Button
+              type="submit"
+              className="bg-transparent border-0 outline-none curor-pointer "
+            >
+              <Send className="text-base text-[#ccc]" />
+            </Button>
+          </form>
+          <div className="flex items-center gap-4">
+            <Facebook className="text-base" />
+            <Twitter className="text-base" />
+            <Linkedin className="text-base" />
+            <Youtube className="text-base" />
+            <Instagram className="text-base" />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">CATEGORY</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Tươi sống
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Thức uống
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Trái cây
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Đồ khô
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Bánh kẹo
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">FOR CONSUMER</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Payment
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Shipping
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Shop Checkout
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Product Returns
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">PRODUCT</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Products
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gray-300">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">CONTACT US</h3>
-            <ul className="space-y-2">
-              <li className="flex items-center">
-                <i className="fas fa-home mr-2"></i>
-                Huy nguyễn
-              </li>
-              <li className="flex items-center">
-                <i className="fas fa-phone mr-2"></i>
-                0376475278
-              </li>
-              <li className="flex items-center">
-                <i className="fas fa-envelope mr-2"></i>
-                <span className="text-sm">huynguyen@gmail.com</span>
-              </li>
-            </ul>
-          </div>
+        <div className="basis-1/4 p-2">
+          <Image width={80} height={80} src={logo} alt="logo" />
         </div>
       </div>
     </footer>
