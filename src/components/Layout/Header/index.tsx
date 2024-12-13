@@ -53,7 +53,7 @@ const Header = () => {
             <Link href="/product" className="hover:text-gray-600">
               Sản phẩm
             </Link>
-            <Link href="#" className="hover:text-gray-600">
+            <Link href="/hiring" className="hover:text-gray-600">
               Tuyển dụng
             </Link>
             <DropdownMenu>
@@ -170,7 +170,7 @@ const Header = () => {
                 Lịch sử hình thành
               </Link>
               <Link
-                href="#"
+                href="/hiring"
                 className="py-2 px-4 hover:bg-gray-100 rounded"
                 onClick={toggleMobileMenu}
               >
