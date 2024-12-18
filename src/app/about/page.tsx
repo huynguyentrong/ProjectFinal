@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import BannerAbout from "@/assets/images/nong_san_trung_quoc_gan_mac_Viet14_44_13_000000.jpg";
+import Logo from "@/assets/images/Tractors-Farming-scaled.jpg";
 import Link from "next/link";
 const About = () => {
   return (
@@ -157,7 +158,7 @@ const About = () => {
                 <div className="flex flex-col lg:flex-row relative min-h-[430px] mb-12 lg:mb-24 item_scroll">
                   <div className="w-full lg:w-[40%] mb-6 lg:mb-0">
                     <Image
-                      src={BannerAbout}
+                      src={Logo}
                       alt="Banner About"
                       width={400}
                       height={400}
@@ -172,14 +173,18 @@ const About = () => {
                       <div className="relative shadow-2xl text-left rounded-lg bg-white p-6 lg:py-[10%] lg:px-[11%]">
                         <div className="w-16 lg:w-24 h-1 bg-[#8B4513] mb-4"></div>
                         <h3 className="text-lg lg:text-xl text-[#0B7132] font-bold mb-4">
-                          NGHIÊN CỨU, CHỌN TẠO, SẢN XUẤT KINH DOANH GIỐNG CÂY
-                          TRỒNG
+                          Sản xuất kinh doanh nông sản theo chuỗi giá trị
                         </h3>
-                        <p className="text-gray-700 mb-4">
-                          Vinarice tập trung nghiên cứu, phát triển các dòng sản
-                          phẩm năng suất, chất lượng vượt trội, thích ứng với
-                          biến đổi khí hậu toàn cầu, tiệp cận xu thế của thế
-                          giới
+                        <p className="text-gray-700 mb-4 line-clamp-3">
+                          Dựa trên ưu thế về truyền thống, kinh nghiệm sản xuất
+                          giống hàng đầu Việt Nam của Tập đoàn mẹ, sức mạnh công
+                          nghệ, hạ tầng, đội ngũ, mạng lưới sản xuất và tiêu
+                          thụ. Vinarice tập trung xây dựng và hoàn toàn chủ động
+                          trong chuỗi giá trị lúa gạo từ nghiên cứu, chọn tạo
+                          giống chất lượng – hệ thống canh tác, sản xuất – công
+                          nghệ sau thu hoạch – thương mại. Tập trung phân khúc
+                          sản phẩm nông sản thương hiệu, an toàn có truy xuất
+                          nguồn gốc rõ ràng.
                         </p>
                       </div>
                     </div>

@@ -15,7 +15,7 @@ import React from "react";
 import logo from "@/assets/images/Logo.png";
 const Footer = () => {
   return (
-    <footer className="w-full absolute bg-[#fff8f0]  pt-24 pb-7 border rounded-tl-[125px] text-base mt-20 ">
+    <footer className="w-full absolute bg-[#fff8f0]  pt-24 pb-7 border rounded-tl-[125px] text-base mt-20">
       <div className="w-[85%] mx-auto flex flex-wrap items-start justify-between">
         <div className="basis-1/4 p-2 mb-4">
           <h3 className="w-fit mb-4 relative">

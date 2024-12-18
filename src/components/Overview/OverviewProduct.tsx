@@ -85,9 +85,11 @@ const OverviewProduct = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </button>
                 </Link>
-                <button className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded-lg text-base font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">
-                  Tìm Hiểu Thêm
-                </button>
+                <Link href="/product">
+                  <button className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded-lg text-base font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                    Tìm Hiểu Thêm
+                  </button>
+                </Link>
               </div>
 
               {/* Trust Indicators */}

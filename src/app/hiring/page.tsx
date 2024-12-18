@@ -103,7 +103,7 @@ const Hiring = () => {
       const isChecked = categoryFilters.includes(value);
       return {
         ...prevFilters,
-        [filterCategory]: isChecked
+        [filterCategory]: isChecked // type : fulltime
           ? categoryFilters.filter((item) => item !== value)
           : [...categoryFilters, value],
       };
